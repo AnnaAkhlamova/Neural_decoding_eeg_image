@@ -7,7 +7,7 @@ One implementation of the split and the preprocessing for the whole team.
 | `common.py` | data access (Hugging Face or a local copy), config files, `preprocess` (shared by both splits) |
 | `within_subject.py` | `within_subject(s)`: train, validation and test on the same person |
 | `loso.py` | `loso(s)`: leave-one-subject-out (7 training, 2 validation, 1 test person) |
-| `selftest.py` | quick check: `python -m eeg_data.selftest` |
+
 
 The numbers (165 validation concepts, per-subject statistics, clip K, window) are read from `../configs/split_concepts.json` and `../configs/preproc_stats.json`. They come from `notebooks/split_and_preprocessing.ipynb`. Do not edit them by hand.
 `eeg_data.info()['config_id']` must be the same for everybody in the team.
